@@ -47,8 +47,7 @@
       "quantityPerUnit": "12 - 1 lb pkgs.",
       "unitPrice": 30,
       "unitsInStock": 15
-    }
-    ,
+    },
     {
       "id": 7,
       "categoryId": 2,
