@@ -15,6 +15,38 @@
       "quantityPerUnit": "24 - 12 oz bottles",
       "unitPrice": "21",
       "unitsInStock": 17
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "productName": "Chef Anton's Cajun Seasoning",
+      "quantityPerUnit": "48 - 6 oz jars",
+      "unitPrice": "222",
+      "unitsInStock": 53
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "productName": "Chef Anton's Gumbo Mix",
+      "quantityPerUnit": "36 boxes",
+      "unitPrice": "21",
+      "unitsInStock": 0
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "productName": "Grandma's Boysenberry Spread",
+      "quantityPerUnit": "12 - 8 oz jars",
+      "unitPrice": 25,
+      "unitsInStock": 120
+    },
+    {
+      "id": 6,
+      "categoryId": 7,
+      "productName": "Uncle Bob's Organic Dried Pears",
+      "quantityPerUnit": "12 - 1 lb pkgs.",
+      "unitPrice": 30,
+      "unitsInStock": 15
     }
   ],
   "categories": [
