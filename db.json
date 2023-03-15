@@ -15,62 +15,6 @@
       "quantityPerUnit": "24 - 12 oz bottles",
       "unitPrice": "21",
       "unitsInStock": 17
-    },
-    {
-      "id": 4,
-      "categoryId": 1,
-      "productName": "Chef Anton's Cajun Seasoning",
-      "quantityPerUnit": "48 - 6 oz jars",
-      "unitPrice": "222",
-      "unitsInStock": 53
-    },
-    {
-      "id": 5,
-      "categoryId": 2,
-      "productName": "Chef Anton's Gumbo Mix",
-      "quantityPerUnit": "36 boxes",
-      "unitPrice": "21",
-      "unitsInStock": 0
-    },
-    {
-      "id": 6,
-      "categoryId": 2,
-      "productName": "Grandma's Boysenberry Spread",
-      "quantityPerUnit": "12 - 8 oz jars",
-      "unitPrice": 25,
-      "unitsInStock": 120
-    },
-    {
-      "id": 7,
-      "categoryId": 7,
-      "productName": "Uncle Bob's Organic Dried Pears",
-      "quantityPerUnit": "12 - 1 lb pkgs.",
-      "unitPrice": 30,
-      "unitsInStock": 15
-    },
-    {
-      "id": 8,
-      "categoryId": 2,
-      "productName": "Northwoods Cranberry Sauce",
-      "quantityPerUnit": "12 - 12 oz jars",
-      "unitPrice": 40,
-      "unitsInStock": 100
-    },
-    {
-      "id": 9,
-      "categoryId": 6,
-      "productName": "Mishi Kobe Niku",
-      "quantityPerUnit": "18 - 500 g pkgs.",
-      "unitPrice": 97,
-      "unitsInStock": 29
-    },
-    {
-      "id": 10,
-      "categoryId": 8,
-      "productName": "Ikura",
-      "quantityPerUnit": "12 - 200 ml jars",
-      "unitPrice": 31,
-      "unitsInStock": 31
     }
   ],
   "categories": [
@@ -98,21 +42,6 @@
       "id": 5,
       "categoryName": "Grains/Cereals",
       "seoUrl": "grains-cereals"
-    },
-    {
-      "id": 6,
-      "categoryName": "Meat/Poultry",
-      "seoUrl": "meat-poultry"
-    },
-    {
-      "id": 7,
-      "categoryName": "Produce",
-      "seoUrl": "produce"
-    },
-    {
-      "id": 8,
-      "categoryName": "Seafood",
-      "seoUrl": "seafood"
     }
   ]
 }
