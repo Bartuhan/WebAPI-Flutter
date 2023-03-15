@@ -23,62 +23,6 @@
       "quantityPerUnit": "48 - 6 oz jars",
       "unitPrice": "222",
       "unitsInStock": 53
-    },
-    {
-      "id": 4,
-      "categoryId": 2,
-      "productName": "Chef Anton's Gumbo Mix",
-      "quantityPerUnit": "36 boxes",
-      "unitPrice": "21",
-      "unitsInStock": 0
-    },
-    {
-      "id": 5,
-      "categoryId": 2,
-      "productName": "Grandma's Boysenberry Spread",
-      "quantityPerUnit": "12 - 8 oz jars",
-      "unitPrice": 25,
-      "unitsInStock": 120
-    },
-    {
-      "id": 6,
-      "categoryId": 7,
-      "productName": "Uncle Bob's Organic Dried Pears",
-      "quantityPerUnit": "12 - 1 lb pkgs.",
-      "unitPrice": 30,
-      "unitsInStock": 15
-    },
-    {
-      "id": 7,
-      "categoryId": 2,
-      "productName": "Northwoods Cranberry Sauce",
-      "quantityPerUnit": "12 - 12 oz jars",
-      "unitPrice": 40,
-      "unitsInStock": 100
-    },
-    {
-      "id": 8,
-      "categoryId": 6,
-      "productName": "Mishi Kobe Niku",
-      "quantityPerUnit": "18 - 500 g pkgs.",
-      "unitPrice": 97,
-      "unitsInStock": 29
-    },
-    {
-      "id": 9,
-      "categoryId": 8,
-      "productName": "Ikura",
-      "quantityPerUnit": "12 - 200 ml jars",
-      "unitPrice": 31,
-      "unitsInStock": 31
-    },
-    {
-      "id": 10,
-      "categoryId": 4,
-      "productName": "Queso Cabrales",
-      "quantityPerUnit": "1 kg pkg.",
-      "unitPrice": 21,
-      "unitsInStock": 22
     }
   ],
   "categories": [
