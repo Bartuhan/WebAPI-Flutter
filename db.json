@@ -48,6 +48,39 @@
       "unitPrice": 30,
       "unitsInStock": 15
     }
+    ,
+    {
+      "id": 7,
+      "categoryId": 2,
+      "productName": "Northwoods Cranberry Sauce",
+      "quantityPerUnit": "12 - 12 oz jars",
+      "unitPrice": 40,
+      "unitsInStock": 100
+    },
+    {
+      "id": 8,
+      "categoryId": 6,
+      "productName": "Mishi Kobe Niku",
+      "quantityPerUnit": "18 - 500 g pkgs.",
+      "unitPrice": 97,
+      "unitsInStock": 29
+    },
+    {
+      "id": 9,
+      "categoryId": 8,
+      "productName": "Ikura",
+      "quantityPerUnit": "12 - 200 ml jars",
+      "unitPrice": 31,
+      "unitsInStock": 31
+    },
+    {
+      "id": 10,
+      "categoryId": 4,
+      "productName": "Queso Cabrales",
+      "quantityPerUnit": "1 kg pkg.",
+      "unitPrice": 21,
+      "unitsInStock": 22
+    }
   ],
   "categories": [
     {
