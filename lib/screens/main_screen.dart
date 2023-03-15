@@ -44,7 +44,7 @@ class _MainScreenState extends State<MainScreen> {
   void getCategoriesFromApi() {
     CategoryApi.getCategories().then((response) {
       setState(() {
-        Iterable list = json.decode(response.body);
+        Iterable list = jsonDecode(response.body);
         kategori = list.map((e) => Category.fromJson(e)).toList();
         getCategoryWidgets();
       });
@@ -61,7 +61,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget getCategoryWidget(Category myKategori) {
     return TextButton(
       onPressed: () {},
-      child: Text("myKategori.categoryName",
+      child: Text("${myKategori.categoryName}",
           style: TextStyle(color: Colors.blueGrey)),
       style: TextButton.styleFrom(
           shape: RoundedRectangleBorder(
