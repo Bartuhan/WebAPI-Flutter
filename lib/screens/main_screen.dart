@@ -2,8 +2,11 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http_demo_iki/data/api/category_api.dart';
+import 'package:http_demo_iki/data/api/product_api.dart';
+import 'package:http_demo_iki/models/product.dart';
 
 import '../models/category.dart';
+import '../widgets/product_list_widget.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -11,12 +14,14 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  List<Category> kategori = <Category>[];
-  List<Widget> kategoriWidget = <Widget>[];
+  List<Category> category = <Category>[];
+  List<Widget> categoryWidgets = <Widget>[];
+  List<Product> products = <Product>[];
 
   @override
   void initState() {
     getCategoriesFromApi();
+    getProducts();
     super.initState();
   }
 
@@ -34,33 +39,45 @@ class _MainScreenState extends State<MainScreen> {
             children: [
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                child: Row(children: kategoriWidget),
-              )
+                child: Row(children: categoryWidgets),
+              ),
+              ProductListWidget(products),
             ],
           )),
     );
+  }
+
+  void getProducts() {
+    ProductApi.getProducts().then((response) {
+      setState(() {
+        Iterable list = jsonDecode(response.body);
+        products = list.map((e) => Product.fromJson(e)).toList();
+      });
+    });
   }
 
   void getCategoriesFromApi() {
     CategoryApi.getCategories().then((response) {
       setState(() {
         Iterable list = jsonDecode(response.body);
-        kategori = list.map((e) => Category.fromJson(e)).toList();
+        category = list.map((e) => Category.fromJson(e)).toList();
         getCategoryWidgets();
       });
     });
   }
 
   List<Widget> getCategoryWidgets() {
-    for (int i = 0; i < kategori.length; i++) {
-      kategoriWidget.add(getCategoryWidget(kategori[i]));
+    for (int i = 0; i < category.length; i++) {
+      categoryWidgets.add(getCategoryWidget(category[i]));
     }
-    return kategoriWidget;
+    return categoryWidgets;
   }
 
   Widget getCategoryWidget(Category myKategori) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        getProductsByCategoryId(myKategori);
+      },
       child: Text("${myKategori.categoryName}",
           style: TextStyle(color: Colors.blueGrey)),
       style: TextButton.styleFrom(
@@ -68,5 +85,14 @@ class _MainScreenState extends State<MainScreen> {
               borderRadius: BorderRadius.circular(15),
               side: BorderSide(color: Colors.lightGreenAccent))),
     );
+  }
+
+  void getProductsByCategoryId(Category category) {
+    ProductApi.getProductsByCategoryId(category.id!.toInt()).then((response) {
+      setState(() {
+        Iterable list = jsonDecode(response.body);
+        products = list.map((e) => Product.fromJson(e)).toList();
+      });
+    });
   }
 }

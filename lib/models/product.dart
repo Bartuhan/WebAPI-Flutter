@@ -3,18 +3,18 @@ class Product {
   int? categoryId;
   String? productName;
   String? quantityPerUnit;
-  double? unitsPrice;
+  double? unitPrice;
   int? unitsInStock;
 
   Product(this.id, this.categoryId, this.productName, this.quantityPerUnit,
-      this.unitsInStock, this.unitsPrice);
+      this.unitsInStock, this.unitPrice);
 
   Product.fromJson(Map json) {
     id = json["id"];
     categoryId = json["categoryId"];
     productName = json["productName"];
     quantityPerUnit = json["quantityPerUnit"];
-    unitsPrice = json["unitsPrice"];
+    unitPrice = double.tryParse(json["unitPrice"].toString());
     unitsInStock = json["unitsInStock"];
   }
   Map toJson() {
@@ -23,7 +23,7 @@ class Product {
       "categoryId": categoryId,
       "productName": productName,
       "quantityPerUnit": quantityPerUnit,
-      "unitsPrice": unitsPrice,
+      "unitsPrice": unitPrice,
       "unitsInStock": unitsInStock
     };
   }
